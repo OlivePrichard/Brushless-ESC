@@ -3224,114 +3224,6 @@
 				)
 			)
 		)
-		(symbol "power:-BATT"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "-BATT"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"-BATT\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power battery"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "-BATT_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 1.27) (xy -0.762 1.27) (xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "-BATT_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -3484,6 +3376,12 @@
 		(uuid "65e28ed4-dea6-4e46-b63e-5237b5f250c7")
 	)
 	(junction
+		(at 29.21 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d688798-6afa-4400-b7b6-b122d8f74319")
+	)
+	(junction
 		(at 163.83 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3566,12 +3464,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c1c6f860-e24e-44c2-bd7e-cbb9a2eb0f6b")
-	)
-	(junction
-		(at 29.21 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cf0472a1-d3aa-4c21-a6e2-28800ce72690")
 	)
 	(junction
 		(at 200.66 71.12)
@@ -3843,16 +3735,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 87.63) (xy 30.48 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3811a55b-a4b4-47f3-90c0-5579bbc7c4fb")
-	)
-	(wire
-		(pts
 			(xy 191.77 33.02) (xy 191.77 36.83)
 		)
 		(stroke
@@ -3970,16 +3852,6 @@
 			(type default)
 		)
 		(uuid "3f168587-222f-4d59-87cb-9c51d60339b2")
-	)
-	(wire
-		(pts
-			(xy 30.48 87.63) (xy 30.48 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f5f6265-4000-46b8-bd7f-31b6a3762183")
 	)
 	(wire
 		(pts
@@ -4653,16 +4525,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 87.63) (xy 24.13 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9f35b36-ebf5-45d1-8fd1-ac49412a6f21")
-	)
-	(wire
-		(pts
 			(xy 191.77 33.02) (xy 193.04 33.02)
 		)
 		(stroke
@@ -4680,16 +4542,6 @@
 			(type default)
 		)
 		(uuid "e09979c0-f7f6-4a90-aae8-d2b8796fa359")
-	)
-	(wire
-		(pts
-			(xy 22.86 88.9) (xy 22.86 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4dff3ed-4d3f-43a4-b62f-c537ed11ab44")
 	)
 	(wire
 		(pts
@@ -5414,6 +5266,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 91.44 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1113775b-f985-410d-b308-8fa778096f29")
+		(property "Reference" "#PWR1"
+			(at 91.44 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 91.44 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 91.44 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d01f7ff-c9d1-4552-8db8-97b1ad5f8ffe")
+		)
+		(instances
+			(project ""
+				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
+					(reference "#PWR1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 187.96 58.42 90)
 		(unit 1)
@@ -5476,72 +5394,6 @@
 			(project "Brushless ESC"
 				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 22.86 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "13e49271-76b1-464e-90f9-8a598b98c256")
-		(property "Reference" "#PWR9"
-			(at 22.86 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 22.86 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 22.86 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d3363b79-4162-4180-a269-ae0470b7c7e1")
-		)
-		(instances
-			(project ""
-				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
-					(reference "#PWR9")
 					(unit 1)
 				)
 			)
@@ -6245,72 +6097,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 22.86 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38fffbbd-e219-4c56-8199-fd9032bb4c79")
-		(property "Reference" "#PWR11"
-			(at 22.86 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 22.86 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 22.86 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "655f32bc-b5a8-4ddb-9b06-0be094e5f158")
-		)
-		(instances
-			(project ""
-				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
-					(reference "#PWR11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Brushless ESC:TMC6200")
 		(at 68.58 58.42 0)
 		(unit 1)
@@ -6503,141 +6289,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:NetTie_2")
-		(at 26.67 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3edec8de-f6c4-4ba4-bd93-b2c7774fd131")
-		(property "Reference" "NT7"
-			(at 26.67 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "NetTie_2"
-			(at 26.67 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.67 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Net tie, 2 pins"
-			(at 26.67 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "26ddb46e-a40e-4582-8aa5-19f8d83a93e5")
-		)
-		(pin "2"
-			(uuid "56e430ee-817c-4a12-a647-c14aaf520ac0")
-		)
-		(instances
-			(project ""
-				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
-					(reference "NT7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-BATT")
-		(at 29.21 43.18 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "45e2a098-4c91-42f9-83c8-6effbed5cbf9")
-		(property "Reference" "#PWR4"
-			(at 29.21 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 33.02 44.958 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 29.21 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8c3b7c1a-2858-4a15-9acd-b952bdc58604")
-		)
-		(instances
-			(project "Brushless ESC"
-				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
-					(reference "#PWR4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 170.18 44.45 90)
 		(unit 1)
@@ -6700,6 +6351,72 @@
 			(project ""
 				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 163.83 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f4102e1-0b88-47a0-b242-9e68c9e3f7ab")
+		(property "Reference" "#PWR2"
+			(at 163.83 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 163.83 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7eba7d14-3e1b-4905-92ee-4a2a1333e197")
+		)
+		(instances
+			(project ""
+				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
+					(reference "#PWR2")
 					(unit 1)
 				)
 			)
@@ -6774,71 +6491,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:-BATT")
-		(at 77.47 87.63 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "53bb206e-1b2d-4e4e-bb4e-3d6ffd352b9a")
-		(property "Reference" "#PWR5"
-			(at 77.47 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 81.28 89.408 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.47 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 77.47 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 77.47 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "830dd715-b878-46f4-b0e2-717a57d31c09")
-		)
-		(instances
-			(project "Brushless ESC"
-				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
-					(reference "#PWR5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:NetTie_2")
 		(at 176.53 46.99 90)
 		(unit 1)
@@ -6905,6 +6557,73 @@
 			(project ""
 				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
 					(reference "NT2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 29.21 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c8153d2-afc0-49b5-a19c-a0ac5323c65d")
+		(property "Reference" "#PWR4"
+			(at 29.21 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 26.67 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 29.21 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7b4f126-77da-4ac7-bfc9-d826af4834ad")
+		)
+		(instances
+			(project ""
+				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
+					(reference "#PWR4")
 					(unit 1)
 				)
 			)
@@ -7543,16 +7262,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:-BATT")
-		(at 30.48 88.9 180)
+		(lib_id "power:GND")
+		(at 77.47 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6c829467-f253-4d3a-9f96-2ad53e1ec49b")
-		(property "Reference" "#PWR10"
-			(at 30.48 85.09 0)
+		(fields_autoplaced yes)
+		(uuid "78b34c18-9447-4c81-bd70-89ac26449926")
+		(property "Reference" "#PWR9"
+			(at 77.47 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7560,8 +7280,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "-BATT"
-			(at 34.29 90.678 0)
+		(property "Value" "GND"
+			(at 77.47 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7569,7 +7289,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 88.9 0)
+			(at 77.47 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7578,7 +7298,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 88.9 0)
+			(at 77.47 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7586,8 +7306,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 30.48 88.9 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 77.47 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7596,12 +7316,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "04445702-3a46-42ca-9676-c0e306510a4c")
+			(uuid "66a16c0a-bf8d-4511-b356-93319733d1ee")
 		)
 		(instances
-			(project "Brushless ESC"
+			(project ""
 				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
-					(reference "#PWR10")
+					(reference "#PWR9")
 					(unit 1)
 				)
 			)
@@ -7744,72 +7464,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:-BATT")
-		(at 91.44 31.75 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "935fc1d4-e1d3-4d45-b4b5-d507a6a4f73f")
-		(property "Reference" "#PWR1"
-			(at 91.44 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 91.44 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 91.44 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 91.44 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a6ee5a8b-3ca2-4821-8ad0-8ec02c623a8c")
-		)
-		(instances
-			(project "Brushless ESC"
-				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
-					(reference "#PWR1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 151.13 58.42 90)
 		(unit 1)
@@ -7872,6 +7526,72 @@
 			(project "Brushless ESC"
 				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 22.86 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94a78929-3c6a-4666-8a0c-8387e01fc860")
+		(property "Reference" "#PWR5"
+			(at 22.86 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 22.86 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.86 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 22.86 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28a39fd7-6ac7-40c0-8b22-d0da7f28f5f8")
+		)
+		(instances
+			(project "Brushless ESC"
+				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
+					(reference "#PWR5")
 					(unit 1)
 				)
 			)
@@ -8154,72 +7874,6 @@
 			(project "Brushless ESC"
 				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
 					(reference "Q6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-BATT")
-		(at 163.83 73.66 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ac522fb8-7563-4b95-8456-685591266ca3")
-		(property "Reference" "#PWR2"
-			(at 163.83 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 163.83 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 163.83 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 163.83 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "81e22ae1-581f-46ed-adcb-c6186a067e8a")
-		)
-		(instances
-			(project ""
-				(path "/66423358-c6d4-4878-aa78-2d2049f71067"
-					(reference "#PWR2")
 					(unit 1)
 				)
 			)
